@@ -1,0 +1,20 @@
+{
+  "name": "dinobot-discord",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "functions-framework --target=dinoInteraction",
+    "deploy": "gcloud functions deploy dinoInteraction --runtime nodejs10 --trigger-http",
+    "format": "prettier --write \"**/*.[tj]s\""
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "discord-interactions": "^1.0.0",
+    "noble-ed25519": "^1.0.2"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.7.1",
+    "prettier": "^2.2.1"
+  }
+}
