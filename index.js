@@ -5,9 +5,6 @@ const {
   verifyKey,
 } = require('discord-interactions');
 
-const API_ENDPOINT = process.env.API_ENDPOINT || 'https://discord.com/api/v8';
-const CLIENT_ID = process.env.CLIENT_ID;
-const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const CLIENT_PUBLIC_KEY = process.env.CLIENT_PUBLIC_KEY;
 
 async function handleCommand(data, res) {
