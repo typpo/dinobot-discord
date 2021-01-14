@@ -15,6 +15,9 @@ async function getDino(opts) {
     // Not great, but just keep trying until we get a dino with full information.
     console.log('Try random with', diet, when, where);
     const dino = await getRandomDino(diet, when, where);
+    if (Object.keys(dino).length < 1) {
+      return null;
+    }
     const { name, period, eats } = dino;
 
     const regions = dino.regions.join(', ');
