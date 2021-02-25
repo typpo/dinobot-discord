@@ -70,7 +70,7 @@ module.exports.dinoInteraction = async (req, res) => {
 
   // Handle the payload
   const interaction = req.body;
-  if (interaction && interaction.type === InteractionType.COMMAND) {
+  if (interaction && interaction.type === InteractionType.APPLICATION_COMMAND) {
     handleCommand(interaction.data, res);
   } else {
     res.send({

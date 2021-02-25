@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
-    "discord-interactions": "^1.0.0",
+    "discord-interactions": "^1.5.3",
     "noble-ed25519": "^1.0.2"
   },
   "devDependencies": {
